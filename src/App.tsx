@@ -1,11 +1,13 @@
 import './App.css'
-import {coursesTitleArray} from "./data/CoursesTitleArray.ts";
-import {CoursesTitle} from "./components/CoursesTitle.tsx";
+import {coursesAndDurationArray} from "./data/CoursesandDurationArray.ts";
+import {Courses} from "./components/Courses.tsx";
 
 function App() {
   return (
     <>
-      {coursesTitleArray.map((course,index) => <CoursesTitle course={course} key={index}/> )}
+      {coursesAndDurationArray.map(
+          (course,index) =>
+              <Courses course={course} key={index}/> )}
     </>
   )
 }
