@@ -1,0 +1,9 @@
+body{
+    background: #212121;
+    color: white;
+}
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
